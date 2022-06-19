@@ -1,6 +1,6 @@
 {
-  "name": "create-comet-land",
-  "version": "1.0.3",
+  "name": "@hyesungoh/create-comet-land",
+  "version": "1.0.5",
   "license": "MIT",
   "description": "Generate a app with comet-land",
   "repository": {
