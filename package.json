@@ -20,7 +20,12 @@
     "pretest": "npm run build"
   },
   "files": [
-    "dist/cli.js"
+    "dist/cli.js",
+    "dist/App.js",
+    "dist/1_Check_Github.js",
+    "dist/2_Clone_Project.js",
+    "dist/3_Configuration.js",
+    "dist/4_More_Information.js"
   ],
   "keywords": [
     "blog",
