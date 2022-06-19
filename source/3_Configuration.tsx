@@ -86,7 +86,7 @@ export default function Configuration() {
     return (
       <Box flexDirection="column">
         <Box>
-          <Box marginRight={2}>
+          <Box marginRight={1}>
             <Text>{configurations[index].question}</Text>
           </Box>
           <TextInput value={eachValue} onChange={setEachValue} onSubmit={onSubmit} />

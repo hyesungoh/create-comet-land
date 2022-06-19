@@ -96,7 +96,7 @@ function Configuration() {
     if (configurations.length > index)
         return (react_1.default.createElement(ink_1.Box, { flexDirection: "column" },
             react_1.default.createElement(ink_1.Box, null,
-                react_1.default.createElement(ink_1.Box, { marginRight: 2 },
+                react_1.default.createElement(ink_1.Box, { marginRight: 1 },
                     react_1.default.createElement(ink_1.Text, null, configurations[index].question)),
                 react_1.default.createElement(ink_text_input_1.default, { value: eachValue, onChange: setEachValue, onSubmit: onSubmit })),
             react_1.default.createElement(ink_1.Text, { dimColor: true }, configurations[index].description)));

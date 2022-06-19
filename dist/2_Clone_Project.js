@@ -41,10 +41,13 @@ function CloneProject() {
     }, []);
     if (isLoading)
         return (react_1.default.createElement(ink_1.Box, null,
-            react_1.default.createElement(ink_1.Box, { marginRight: 2 },
+            react_1.default.createElement(ink_1.Box, { marginRight: 1 },
                 react_1.default.createElement(ink_1.Text, { color: "green" },
                     react_1.default.createElement(ink_spinner_1.default, null))),
-            react_1.default.createElement(ink_1.Text, null, "cloning project...")));
+            react_1.default.createElement(ink_1.Text, null,
+                "Cloning ",
+                react_1.default.createElement(ink_1.Text, { color: "blue" }, "comet-land"),
+                "...")));
     return (react_1.default.createElement(react_1.default.Fragment, null,
         react_1.default.createElement(ink_1.Box, null,
             react_1.default.createElement(ink_1.Text, null,
