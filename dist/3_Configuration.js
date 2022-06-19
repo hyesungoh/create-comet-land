@@ -30,6 +30,7 @@ var react_1 = __importStar(require("react"));
 var fs_1 = __importDefault(require("fs"));
 var ink_1 = require("ink");
 var ink_text_input_1 = __importDefault(require("ink-text-input"));
+var _4_More_Information_1 = __importDefault(require("./4_More_Information"));
 var DIRNAME = process.cwd() + '/comet-land';
 var configurations = [
     {
@@ -101,6 +102,7 @@ function Configuration() {
                 react_1.default.createElement(ink_text_input_1.default, { value: eachValue, onChange: setEachValue, onSubmit: onSubmit })),
             react_1.default.createElement(ink_1.Text, { dimColor: true }, configurations[index].description)));
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(ink_1.Text, null, "\u2705 Done with default configuration!")));
+        react_1.default.createElement(ink_1.Text, null, "\u2705 Done with default configuration!"),
+        react_1.default.createElement(_4_More_Information_1.default, null)));
 }
 exports.default = Configuration;
