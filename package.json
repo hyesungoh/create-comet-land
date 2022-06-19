@@ -1,14 +1,11 @@
 {
-  "name": "@hyesungoh/create-comet-land",
-  "version": "1.0.5",
+  "name": "create-comet-land",
+  "version": "1.0.6",
   "license": "MIT",
   "description": "Generate a app with comet-land",
   "repository": {
     "type": "git",
     "url": "https://github.com/hyesungoh/create-comet-land.git"
-  },
-  "publishConfig": {
-    "@hyesungoh:registry": "https://npm.pkg.github.com"
   },
   "author": {
     "name": "Hye Sung Oh",
