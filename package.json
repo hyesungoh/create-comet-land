@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/hyesungoh/create-comet-land.git"
   },
+  "publishConfig": {
+    "@hyesungoh:registry": "https://npm.pkg.github.com"
+  },
   "author": {
     "name": "Hye Sung Oh",
     "email": "haesungoh414@gmail.com",
