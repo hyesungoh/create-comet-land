@@ -1,6 +1,6 @@
 {
   "name": "create-comet-land",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Generate a app with comet-land",
   "repository": "hyesungoh/create-comet-land",
@@ -23,11 +23,11 @@
     "dist/cli.js"
   ],
   "keywords": [
-    "ink",
-    "ink-app",
-    "ink",
-    "ink-app",
-    "cli"
+    "blog",
+    "blog-theme",
+    "resume",
+    "resume-theme",
+    "comet-land"
   ],
   "dependencies": {
     "ink": "^3.2.0",
