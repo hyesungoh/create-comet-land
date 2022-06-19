@@ -30,7 +30,6 @@ var react_1 = __importStar(require("react"));
 var ink_1 = require("ink");
 var ink_spinner_1 = __importDefault(require("ink-spinner"));
 var shelljs_1 = __importDefault(require("shelljs"));
-var _3_Configuration_1 = __importDefault(require("./3_Configuration"));
 var REPO_URL = 'https://github.com/hyesungoh/comet-land';
 function CloneProject() {
     var _a = (0, react_1.useState)(true), isLoading = _a[0], setIsLoading = _a[1];
@@ -40,7 +39,7 @@ function CloneProject() {
         });
     }, []);
     if (isLoading)
-        return (react_1.default.createElement(ink_1.Box, null,
+        return (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(ink_1.Box, { marginRight: 1 },
                 react_1.default.createElement(ink_1.Text, { color: "green" },
                     react_1.default.createElement(ink_spinner_1.default, null))),
@@ -49,10 +48,8 @@ function CloneProject() {
                 react_1.default.createElement(ink_1.Text, { color: "blue" }, "comet-land"),
                 "...")));
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(ink_1.Box, null,
-            react_1.default.createElement(ink_1.Text, null,
-                "\u2705 Clone the ",
-                react_1.default.createElement(ink_1.Text, { color: "blue" }, "comet-land"))),
-        react_1.default.createElement(_3_Configuration_1.default, null)));
+        react_1.default.createElement(ink_1.Text, null,
+            "\u2705 Clone the ",
+            react_1.default.createElement(ink_1.Text, { color: "blue" }, "comet-land"))));
 }
 exports.default = CloneProject;

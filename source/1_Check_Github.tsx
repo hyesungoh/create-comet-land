@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Text } from 'ink';
+import { Text } from 'ink';
 import shell from 'shelljs';
 
 import CloneProject from './2_Clone_Project';
@@ -15,20 +15,17 @@ export default function CheckGithub() {
 
   if (!isCheckedGitInstalled)
     return (
-      <Box>
-        <Text>
-          ❎ Please install <Text color="red">git</Text>, before start this project.
-        </Text>
-      </Box>
+      <Text>
+        ❎ Please install <Text color="red">git</Text>, before start this project.
+      </Text>
     );
 
   return (
     <>
-      <Box>
-        <Text>
-          ✅ Already installed <Text color="red">git</Text>
-        </Text>
-      </Box>
+      <Text>
+        ✅ Already installed <Text color="red">git</Text>
+      </Text>
+
       <CloneProject />
     </>
   );

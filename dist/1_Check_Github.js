@@ -38,16 +38,14 @@ function CheckGithub() {
         }
     }, []);
     if (!isCheckedGitInstalled)
-        return (react_1.default.createElement(ink_1.Box, null,
-            react_1.default.createElement(ink_1.Text, null,
-                "\u274E Please install ",
-                react_1.default.createElement(ink_1.Text, { color: "red" }, "git"),
-                ", before start this project.")));
+        return (react_1.default.createElement(ink_1.Text, null,
+            "\u274E Please install ",
+            react_1.default.createElement(ink_1.Text, { color: "red" }, "git"),
+            ", before start this project."));
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(ink_1.Box, null,
-            react_1.default.createElement(ink_1.Text, null,
-                "\u2705 Already installed ",
-                react_1.default.createElement(ink_1.Text, { color: "red" }, "git"))),
+        react_1.default.createElement(ink_1.Text, null,
+            "\u2705 Already installed ",
+            react_1.default.createElement(ink_1.Text, { color: "red" }, "git")),
         react_1.default.createElement(_2_Clone_Project_1.default, null)));
 }
 exports.default = CheckGithub;

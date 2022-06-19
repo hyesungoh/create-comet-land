@@ -18,7 +18,7 @@ export default function CloneProject() {
 
   if (isLoading)
     return (
-      <Box>
+      <>
         <Box marginRight={1}>
           <Text color="green">
             <Spinner />
@@ -28,16 +28,14 @@ export default function CloneProject() {
         <Text>
           Cloning <Text color="blue">comet-land</Text>...
         </Text>
-      </Box>
+      </>
     );
 
   return (
     <>
-      <Box>
-        <Text>
-          ✅ Clone the <Text color="blue">comet-land</Text>
-        </Text>
-      </Box>
+      <Text>
+        ✅ Clone the <Text color="blue">comet-land</Text>
+      </Text>
 
       <Configuration />
     </>
