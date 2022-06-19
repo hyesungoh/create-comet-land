@@ -3,7 +3,10 @@
   "version": "1.0.3",
   "license": "MIT",
   "description": "Generate a app with comet-land",
-  "repository": "hyesungoh/create-comet-land",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyesungoh/create-comet-land.git"
+  },
   "author": {
     "name": "Hye Sung Oh",
     "email": "haesungoh414@gmail.com",
