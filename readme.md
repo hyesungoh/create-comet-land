@@ -15,9 +15,10 @@ Generate [`comet-land`](https://github.com/hyesungoh/comet-land) app with comman
 ## Usage
 
 ```bash
-mkdir my-blog-and-resume
-cd my-blog-and-resume
-
 # just one command you need!
 npx create-comet-land
+# or
+yarn create comet-land
 ```
+
+![create-comet-land-v1](https://user-images.githubusercontent.com/26461307/174493637-56860e31-befd-4a2b-8058-6a7cc7192df0.gif)
