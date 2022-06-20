@@ -11,7 +11,7 @@ export default function CloneProject() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    shell.exec(`git clone ${REPO_URL}`, () => {
+    shell.exec(`git clone ${REPO_URL}`, { silent: true }, () => {
       setIsLoading(false);
     });
   }, []);

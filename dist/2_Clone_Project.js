@@ -35,7 +35,7 @@ var REPO_URL = 'https://github.com/hyesungoh/comet-land';
 function CloneProject() {
     var _a = (0, react_1.useState)(true), isLoading = _a[0], setIsLoading = _a[1];
     (0, react_1.useEffect)(function () {
-        shelljs_1.default.exec("git clone ".concat(REPO_URL), function () {
+        shelljs_1.default.exec("git clone ".concat(REPO_URL), { silent: true }, function () {
             setIsLoading(false);
         });
     }, []);
