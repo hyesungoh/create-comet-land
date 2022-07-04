@@ -1,8 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   mode: 'production',
+  devtool: 'inline-source-map',
   externalsPresets: { node: true },
   externals: [nodeExternals()],
   target: 'node',
@@ -24,4 +26,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new webpack.BannerPlugin({
+      banner: '#!/usr/bin/env node',
+      raw: true,
+    }),
+  ],
 };
