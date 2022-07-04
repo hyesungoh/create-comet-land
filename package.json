@@ -1,6 +1,6 @@
 {
   "name": "create-comet-land",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "license": "MIT",
   "description": "Generate a app with comet-land",
   "repository": {
@@ -12,23 +12,18 @@
     "email": "haesungoh414@gmail.com",
     "url": "https://www.hyesungoh.xyz"
   },
-  "bin": "dist/cli.js",
+  "bin": "dist/index.js",
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "build": "tsc && chmod +x dist/cli.js",
-    "start": "npm run build && dist/cli.js",
+    "build": "webpack",
+    "start": "npm run build && node dist/index.js",
     "lint": "eslint",
     "pretest": "npm run build"
   },
   "files": [
-    "dist/cli.js",
-    "dist/App.js",
-    "dist/1_Check_Github.js",
-    "dist/2_Clone_Project.js",
-    "dist/3_Configuration.js",
-    "dist/4_More_Information.js"
+    "dist/index.js"
   ],
   "keywords": [
     "blog",
@@ -60,6 +55,9 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "ink-testing-library": "^2.1.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
   }
 }
