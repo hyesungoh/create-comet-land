@@ -1,7 +1,10 @@
 const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   mode: 'production',
+  externalsPresets: { node: true },
+  externals: [nodeExternals()],
   target: 'node',
   entry: { main: './source/cli.tsx' },
   output: {
@@ -17,6 +20,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
+        exclude: path.resolve(__dirname, 'node_modules'),
       },
     ],
   },
