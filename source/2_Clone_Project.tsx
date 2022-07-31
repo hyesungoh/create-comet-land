@@ -5,13 +5,13 @@ import shell from 'shelljs';
 
 import Configuration from './3_Configuration';
 
-const REPO_URL = 'https://github.com/hyesungoh/comet-land' as const;
+const REPO_URL = 'https://github.com/hyesungoh/comet-land';
 
 export default function CloneProject() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    shell.exec(`git clone ${REPO_URL}`, { silent: true }, () => {
+    shell.exec(`git clone ${REPO_URL} --depth=1`, { silent: true }, () => {
       setIsLoading(false);
     });
   }, []);
