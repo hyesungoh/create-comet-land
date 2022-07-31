@@ -3,7 +3,7 @@ import fs from 'fs';
 import { Box, Text } from 'ink';
 import TextInput from 'ink-text-input';
 
-import MoreInformation from './4_More_Information';
+import MoreInformation from './5_More_Information';
 
 const DIRNAME = process.cwd() + '/comet-land';
 
