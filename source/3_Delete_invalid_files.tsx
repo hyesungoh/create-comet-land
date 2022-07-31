@@ -3,15 +3,13 @@ import { Box, Text } from 'ink';
 import Spinner from 'ink-spinner';
 import shell from 'shelljs';
 
-import DeleteInvalidFiles from './3_Delete_invalid_files';
+import Configuration from './4_Configuration';
 
-const REPO_URL = 'https://github.com/hyesungoh/comet-land';
-
-export default function CloneProject() {
+export default function DeleteInvalidFiles() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    shell.exec(`git clone ${REPO_URL} --depth=1`, { silent: true }, () => {
+    shell.exec('rm -rf ./comet-land/.git', { silent: true }, () => {
       setIsLoading(false);
     });
   }, []);
@@ -25,19 +23,15 @@ export default function CloneProject() {
           </Text>
         </Box>
 
-        <Text>
-          Cloning <Text color="blue">comet-land</Text>...
-        </Text>
+        <Text>Deleting invalid files...</Text>
       </Box>
     );
 
   return (
     <>
-      <Text>
-        ✅ Clone the <Text color="blue">comet-land</Text>
-      </Text>
+      <Text>✅ Deleted invalid files</Text>
 
-      <DeleteInvalidFiles />
+      <Configuration />
     </>
   );
 }
