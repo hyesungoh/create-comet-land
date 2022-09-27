@@ -31,6 +31,20 @@ const configurations: IConfiguration[] = [
           return `export const authorName = '${value}';`;
         },
       },
+      {
+        directory: '/apps/resume/_content/Header/data.json',
+        line: 2,
+        callback: (value: string) => {
+          return `  "heading": "Hello, This is ${value}",`;
+        },
+      },
+      {
+        directory: '/apps/resume/_content/Header/data.json',
+        line: 3,
+        callback: (value: string) => {
+          return `  "description": "I'm ${value}, who Foo company developer"`;
+        },
+      },
     ],
   },
   {
