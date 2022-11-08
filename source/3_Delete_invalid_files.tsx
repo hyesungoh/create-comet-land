@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Text } from 'ink';
+import { Box, Text, useStdin } from 'ink';
 import Spinner from 'ink-spinner';
 import shell from 'shelljs';
 
 import Configuration from './4_Configuration';
+import MoreInformation from './5_More_Information';
 
 const BASE_DIRECTORY = './comet-land/';
 
@@ -21,6 +22,7 @@ const DELETE_FILES = INVALID_FILES.map(directory => `${BASE_DIRECTORY}${director
 
 export default function DeleteInvalidFiles() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const { isRawModeSupported } = useStdin();
 
   useEffect(() => {
     shell.exec(`rm -rf ${DELETE_FILES}`, { silent: true }, () => {
@@ -41,11 +43,22 @@ export default function DeleteInvalidFiles() {
       </Box>
     );
 
+  if (isRawModeSupported) {
+    return (
+      <>
+        <Text>✅ Deleted invalid files</Text>
+
+        <Configuration />
+      </>
+    );
+  }
+
   return (
     <>
       <Text>✅ Deleted invalid files</Text>
+      <Text>❓ Does not support raw mode, please configure your self!</Text>
 
-      <Configuration />
+      <MoreInformation />
     </>
   );
 }
