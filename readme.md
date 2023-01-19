@@ -1,6 +1,6 @@
 # create-comet-land
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/hyesungoh/create-comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/create-comet-land/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/hyesungoh/create-comet-land.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/hyesungoh/create-comet-land/context:javascript) [![CI](https://github.com/hyesungoh/create-comet-land/actions/workflows/CI.yml/badge.svg)](https://github.com/hyesungoh/create-comet-land/actions/workflows/CI.yml) [![Publish Package to npmjs](https://github.com/hyesungoh/create-comet-land/actions/workflows/CD.yml/badge.svg)](https://github.com/hyesungoh/create-comet-land/actions/workflows/CD.yml)
+[![CodeQL](https://github.com/hyesungoh/create-comet-land/actions/workflows/codeql.yml/badge.svg)](https://github.com/hyesungoh/create-comet-land/actions/workflows/codeql.yml) [![CI](https://github.com/hyesungoh/create-comet-land/actions/workflows/CI.yml/badge.svg)](https://github.com/hyesungoh/create-comet-land/actions/workflows/CI.yml) [![Publish Package to npmjs](https://github.com/hyesungoh/create-comet-land/actions/workflows/CD.yml/badge.svg)](https://github.com/hyesungoh/create-comet-land/actions/workflows/CD.yml)
 
 Generate [`comet-land`](https://github.com/hyesungoh/comet-land) app with command.
 
